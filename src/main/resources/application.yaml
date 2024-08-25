@@ -5,9 +5,9 @@ spring:
   application:
     name: greenatom
   datasource:
-    url: jdbc:postgresql:${PATH DB}
-    username: ${LOGIN POSTGRE}
-    password: ${PASSWORD POSTGRE}
+    url: jdbc:postgresql:${PATH_DB}
+    username: ${LOGIN_POSTGRE}
+    password: ${PASSWORD_POSTGRE}
   jpa:
     show: true
     hibernate:
