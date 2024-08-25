@@ -1,0 +1,31 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: greenatom
+  datasource:
+    url: jdbc:postgresql:${PATH DB}
+    username: ${LOGIN POSTGRE}
+    password: ${PASSWORD POSTGRE}
+  jpa:
+    show: true
+    hibernate:
+      ddl-auto: validate
+    open-in-view: true
+    output:
+      ansi:
+        enabled=ALWAYS:
+  liquibase:
+    enabled: true
+  change-log:
+    classpath: db/changelog/db.changelog-master.yaml
+
+source:
+  driver-class-name: org.postgresql.Driver
+
+logging:
+  level:
+    root: INFO
+  file:
+    name: LogGreenAtom

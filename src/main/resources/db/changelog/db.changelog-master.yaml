@@ -1,0 +1,7 @@
+
+databaseChangeLog:
+  #Создание таблицы для хранения файлов
+  - includeAll:
+      path: db/changelog/changeset/1_0/
+  - includeAll:
+      path: db/changelog/changeset/1_1/
